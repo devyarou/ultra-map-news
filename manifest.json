@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "あなたは知らなくてはなりません！",
+  "version": "1.0",
+  "description": "あなたは日本のみをその要素をニュースを知ることが！できます！",
+  "permissions": [],
+  "host_permissions": [
+    "*://*.nhk.or.jp/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon16.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
