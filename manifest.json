@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "あなたは知らなくてはなりません！",
   "version": "1.0",
-  "description": "あなたは日本のみをその要素をニュースを知ることが！できます！",
+  "description": "あなたは日本で起きたことを知ることができます!💃💃💃",
   "permissions": [],
   "host_permissions": [
     "*://*.nhk.or.jp/*"

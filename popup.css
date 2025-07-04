@@ -77,6 +77,23 @@ h1 {
     flex-direction: column;
 }
 
+#news-articles {
+    flex: 1 1 55%;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.weather-container {
+    flex: 1 1 45%;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .result {
     margin-top: 0;
     padding: 15px;
@@ -93,12 +110,6 @@ h1 {
     transition: all 0.3s ease;
     width: 100%;
     margin-bottom: 20px;
-}
-
-.news-articles {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding-right: 15px;
 }
 
 .initial-message {
@@ -211,4 +222,42 @@ h1 {
     .label {
         font-size: 7px;
     }
+}
+
+.weather-block {
+    background: #e3f2fd;
+    border-radius: 10px;
+    padding: 12px 10px 8px 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(25, 118, 210, 0.08);
+    text-align: left;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #f7fafd;
+    font-size: 15px;
+}
+.weather-table th, .weather-table td {
+    border: 1px solid #b3c6e0;
+    padding: 6px 4px;
+    text-align: center;
+    min-width: 48px;
+}
+.weather-table th {
+    background: #e3f2fd;
+    font-weight: bold;
+    font-size: 13px;
+}
+.weather-table tr:nth-child(3) td { /* 最低気温 */
+    font-size: 15px;
+}
+.weather-table tr:nth-child(4) td { /* 最高気温 */
+    font-size: 15px;
 } 
